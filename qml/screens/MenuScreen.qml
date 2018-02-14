@@ -60,6 +60,14 @@ BlankScreen {
             onClicked:
                 stackView.push(Qt.resolvedUrl("AboutScreen.qml"))
         }
+        
+        //Qb specific
+        Controls.Button {
+            text: "Exit"
+            color: "#d76241"
+            onClicked:
+                mainApp.close()
+        }
     }
 
     Controls.Label {
