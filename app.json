@@ -1,0 +1,15 @@
+{
+    "name"			: "QML Plane",
+	"version"		: "1.0.0",
+	"build"         : 1,
+    "namespace"		: "com.wearyinside.qmlplane",
+	
+	"supportedOs"   : ["android","ios","osx","linux","windows"],
+
+	"category"      : "Games",
+	"subCategory"   : "",
+	"genre"   		: "Arcade",
+
+	"author"		: [{"name":"Oleg Yadrov","link":"https://github.com/olegyadrov"}],
+	"projectLink"	: [{"title":"Git","link":"https://github.com/olegyadrov/qmlplane"}]
+}
