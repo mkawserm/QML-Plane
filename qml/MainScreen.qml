@@ -17,7 +17,7 @@
 ****************************************************************************/
 
 import QtQuick 2.5
-import QtQuick.Controls 1.4
+import QtQuick.Controls 2.2
 import QtMultimedia 5.5
 import Qt.labs.settings 1.0
 import "screens"
@@ -62,28 +62,6 @@ Rectangle {
             anchors.fill: parent
             z: -1
             source: "../../resources/images/background.svg"
-        }
-
-        delegate: StackViewDelegate {
-            function transitionFinished(properties)
-            {
-                properties.exitItem.opacity = 1
-            }
-
-            pushTransition: StackViewTransition {
-                PropertyAnimation {
-                    target: enterItem
-                    property: "opacity"
-                    from: 0
-                    to: 1
-                }
-                PropertyAnimation {
-                    target: exitItem
-                    property: "opacity"
-                    from: 1
-                    to: 0
-                }
-            }
         }
     }
 
