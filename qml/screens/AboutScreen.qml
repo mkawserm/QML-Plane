@@ -27,7 +27,7 @@ BlankScreen {
         anchors.top: parent.top
         anchors.topMargin: 30 * settings.scaleFactor
         anchors.horizontalCenter: parent.horizontalCenter
-        text: Qt.application.name + " " + Qt.application.version
+        text: mainApp.getAppManifest()["name"] + " " + mainApp.getAppManifest()["version"]
         font.pixelSize: 50 * settings.scaleFactor
         color: "#d76241"
     }
